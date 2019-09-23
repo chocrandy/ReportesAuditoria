@@ -1,0 +1,48 @@
+create database bd_risko;
+use bd_risko;
+
+=============================PRIMERA PARTE=============================
+create table tbl_clientes (
+	id_cliente 	int(10) NOT NULL AUTO_INCREMENT,
+	nombre		varchar(45) NOT NULL,
+	apellido	varchar(45) NOT NULL,
+	direccion	varchar(45) NOT NULL,
+	telefono	varchar(45) NOT NULL,
+	edad		int(5) NOT NULL,
+	dpi		varchar(45) NOT NULL,
+	nit		varchar(45) NOT NULL,
+	primary key (id_cliente)
+);
+
+insert into tbl_clientes values (1, "Pedro",   "García",    "ciudad", "43194567", 23, "01014732819234", "347819-1");
+insert into tbl_clientes values (2, "Iván",    "Lopez",     "ciudad", "52967164", 41, "01015296716434", "572348-2");
+insert into tbl_clientes values (3, "Sara",    "Clavel",    "ciudad", "85612964", 27, "01014785612964", "901275-4");
+insert into tbl_clientes values (4, "Celeste", "Marroquín", "ciudad", "16482078", 30, "01011648207874", "738296-7");
+insert into tbl_clientes values (5, "Sandra",  "Torres",    "ciudad", "90352070", 31, "01014903520704", "982388-4");
+
+=============================SEGUNDA PARTE=============================
+create table tbl_empleados (
+	id_empleado 	int(10) NOT NULL AUTO_INCREMENT,
+	nombre		varchar(45) NOT NULL,
+	apellido	varchar(45) NOT NULL,
+	sexo		varchar(45) NOT NULL,
+	telefono	varchar(45) NOT NULL,
+	edad		int(5) NOT NULL,
+	dpi		varchar(45) NOT NULL,
+	puesto		varchar(45) NOT NULL,
+	profesion	varchar(45) NOT NULL,
+	primary key (id_empleado)
+);
+
+insert into tbl_empleados values (1, "Randy",   "Choc",     "masculino", "59461474", 21, "0901161288", "analista",         "ing. en sistemas"); 
+insert into tbl_empleados values (2, "Juan",    "Gámez",    "masculino", "49146519", 21, "09011647",   "programador",      "ing. en sistemas");
+insert into tbl_empleados values (3, "Edgar",   "Casasola", "masculino", "76230912", 21, "0901169",    "programador",      "ing. en sistemas");
+insert into tbl_empleados values (4, "Ligia",   "Abril",    "femenino",  "23859012", 23, "090116100",  "soporte it",       "ing. en sistemas");
+insert into tbl_empleados values (5, "Conny",   "Barrios",  "femenino",  "65094022", 22, "0901154555", "soporte it",       "ing. en sistemas");
+insert into tbl_empleados values (6, "Gustavo", "Perez",    "masculino", "83471209", 20, "09011647",   "jefe de proyecto", "ing. en sistemas");
+
+Puestos: 
+	analista
+	programador
+	soporte it
+	jefe de proyecto
