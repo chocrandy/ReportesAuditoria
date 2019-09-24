@@ -62,7 +62,10 @@
             this.ClientSize = new System.Drawing.Size(911, 529);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.label2);
+            this.MaximumSize = new System.Drawing.Size(927, 568);
+            this.MinimumSize = new System.Drawing.Size(927, 568);
             this.Name = "frm_ReporteClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte Clientes";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_ReporteClientes_FormClosed);
             this.Load += new System.EventHandler(this.Frm_ReporteClientes_Load);
